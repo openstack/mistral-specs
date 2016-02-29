@@ -22,6 +22,15 @@ Mitaka
 
    specs/mitaka/approved/*
 
+Newton
+------
+
+.. toctree::
+   :glob:
+   :maxdepth: 1
+
+   specs/newton/approved/*
+
 
 Implemented specifications
 ==========================
@@ -37,6 +46,15 @@ Mitaka
    :maxdepth: 1
 
    specs/mitaka/implemented/*
+
+Newton
+------
+
+.. toctree::
+   :glob:
+   :maxdepth: 1
+
+   specs/newton/implemented/*
 
 
 Indices and tables
