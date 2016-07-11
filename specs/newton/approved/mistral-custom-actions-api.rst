@@ -15,7 +15,7 @@ https://blueprints.launchpad.net/mistral/+spec/mistral-custom-actions-api
 This specification sets a formal basis for those Mistral users who want to
 create their own actions and make them available to use as part of Mistral
 workflows. The number one question that the spec addresses is "What is
-available in Mistral code base in order to implement custom actions.
+available in Mistral code base in order to implement custom actions?"
 
 
 Problem description
@@ -84,7 +84,7 @@ instance exists in the tenant by calling Nova and if it does the action
 runs a number of secure shell commands to configure it. In this scenario,
 we need to call Nova and do ssh. Both already exist in Mistral as actions
 "nova.servers_get" and "std.ssh". So there should be a mechanism allowing
-to reuse those actions while create a new more complex action.
+to reuse those actions while creating a new more complex action.
 
 Proposed change
 ===============
@@ -204,7 +204,7 @@ No impact.
 
 Custom actions developers
 ^^^^^^^^^^^^^^^^^^^^^^^^^
-Using Custom Actions API described in this spec whereas now they
+Having to use Custom Actions API described in this spec whereas now they
 can only use **mistral.actions.base** safely.
 
 Performance Impact
