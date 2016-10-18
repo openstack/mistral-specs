@@ -31,6 +31,15 @@ Newton
 
    specs/newton/approved/*
 
+Ocata
+-----
+
+.. toctree::
+   :glob:
+   :maxdepth: 1
+
+   specs/ocata/approved/*
+
 
 Implemented specifications
 ==========================
@@ -55,6 +64,15 @@ Newton
    :maxdepth: 1
 
    specs/newton/implemented/*
+
+Ocata
+-----
+
+.. toctree::
+   :glob:
+   :maxdepth: 1
+
+   specs/ocata/implemented/*
 
 
 Indices and tables
