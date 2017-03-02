@@ -75,6 +75,19 @@ Ocata
    specs/ocata/implemented/*
 
 
+========================
+Mistral Project Policies
+========================
+
+Team decisions and policies that are not limited to a specific release.
+
+.. toctree::
+   :glob:
+   :maxdepth: 1
+
+   specs/policy/*
+
+
 Indices and tables
 ==================
 
