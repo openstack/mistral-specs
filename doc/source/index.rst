@@ -40,6 +40,14 @@ Ocata
 
    specs/ocata/approved/*
 
+Pike
+----
+
+.. toctree::
+   :glob:
+   :maxdepth: 1
+
+   specs/pike/approved/*
 
 Implemented specifications
 ==========================
@@ -74,6 +82,14 @@ Ocata
 
    specs/ocata/implemented/*
 
+Pike
+-----
+
+.. toctree::
+   :glob:
+   :maxdepth: 1
+
+   specs/pike/implemented/*
 
 Indices and tables
 ==================
