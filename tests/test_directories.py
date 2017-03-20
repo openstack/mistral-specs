@@ -21,6 +21,12 @@ class TestDirectories(testtools.TestCase):
         releases = [x.split('/')[1] for x in glob.glob('specs/*/')]
 
         for release in releases:
+
+            if release == 'policy':
+                # Policy specs are never "implemented" so they don't need to be
+                # nested in the same way.
+                continue
+
             files = os.listdir("specs/%s/" % release)
             valid_names = ['approved', 'implemented']
 
