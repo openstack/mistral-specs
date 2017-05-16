@@ -40,18 +40,18 @@ Use Cases
 Proposed change
 ===============
 
-The basic idea is simple, support 'region' as an extra input param for all
-OpenStack actions.
+The basic idea is to simplely support 'action_region' as an extra input param
+for actions of configured OpenStack projects..
 
 1. Add a config option called ``modules_support_region``, the value will be
-   list of module names for which the 'region' input param will be add to each
-   of its actions. The reason for adding this option is, there may be some
-   OpenStack services (e.g. Keystone) already support region(or similar
+   list of module names for which the 'action_region' input param will be add
+   to each of its actions. The reason for adding this option is, there may be
+   some OpenStack services (e.g. Keystone) already support region(or similar
    concept) in action input params, we should not add a param with same
    meaning, e.g. if Keystone is shared between regions in OpenStack
    deployment, 'keystone' should be excluded from the list.
 
-2. Insert 'region' as an optional input param when registering OpenStack
+2. Insert 'action_region' as an optional input param when registering OpenStack
    actions.
 
 Alternatives
@@ -84,8 +84,8 @@ Deployer impact
 ---------------
 
 When upgrade, deployer should run ``tools/sync_db.py`` script to delete all
-OpenStack actions and re-create again. 'region' will be added as input param
-automatically.
+OpenStack actions and re-create again. 'action_region' will be added as input
+param automatically.
 
 
 Implementation
@@ -100,10 +100,9 @@ Primary assignee:
 Work Items
 ----------
 
-* Add 'region' as action input param for modules specified in
-  ``modules_support_region`` options. Use 'region' to construct OpenStack
-
-* service client.
+* Add 'action_region' as action input param for modules specified in
+  ``modules_support_region`` options. Use 'action_region' to construct
+  OpenStack service client.
 
 
 Dependencies
@@ -115,11 +114,11 @@ None.
 Testing
 =======
 
-* write tests to make sure 'region' is supported for configured OpenStack
-  modules.
+* write tests to make sure 'action_region' is supported for configured
+  OpenStack modules.
 
-* write tests to make sure 'region' is properly used to construct OpenStack
-  service client.
+* write tests to make sure 'action_region' is properly used to construct
+  OpenStack service client.
 
 
 References
