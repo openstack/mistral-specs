@@ -47,7 +47,7 @@ added:
 
 If both present, these are used to execute the workflow actions. If none are
 present, then the current legacy operation mode is used, and the preconfigured
-authetication URL is used in the actions. In any other case the execution
+authentication URL is used in the actions. In any other case the execution
 creation should fail.
 
 These parameters are stored in the context field of the execution.
