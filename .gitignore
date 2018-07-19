@@ -28,7 +28,7 @@ pip-log.txt
 .tox
 nosetests.xml
 cover/*
-.testrepository/
+.stestr/
 subunit.log
 .mistral.conf
 AUTHORS
