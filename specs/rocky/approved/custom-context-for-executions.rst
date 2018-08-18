@@ -32,10 +32,10 @@ in any part of the execution.
 
 2. Provide auth parameters for OpenStack actions
 
-Currently the OpenStack actions use the SecurityContext to get the authentication
-data. The X-Target-* headers provide an alternative way to override these
-parameters but the size of these headers is limited and already makes them
-unable to handle larger OpenStack installations. [1,2]
+Currently the OpenStack actions use the SecurityContext to get the
+authentication data. The X-Target-* headers provide an alternative way to
+override these parameters but the size of these headers is limited and already
+makes them unable to handle larger OpenStack installations. [1,2]
 
 3. Clearly separate the Mistral API authentication parameters from the
 OpenStack Action authentication parameters
@@ -97,17 +97,17 @@ mistral exection-create
 
 Add the --custom_context parameter.
 
-    mistral execution-create --custom_context='{"correlation_id":"1212ddaa33"}' ...
+ mistral execution-create --custom_context='{"correlation_id":"12da"}' ...
 
 mistral run-action
 ~~~~~~~~~~~~~~~~~~
 
 Add the --custom_context parameter.
 
-    mistral run-action --custom_context='{"correlation_id":"1212ddaa33"}' ...
+ mistral run-action --custom_context='{"correlation_id":"12da"}' ...
 
 
-Performance impact
+Performance Impact
 ------------------
 
 Large custom_contexts can slow down the execution of workflows as it is
@@ -156,10 +156,17 @@ Add the support for the special 'os.auth' key (client and API)
 Add the custom_context to mistral-lib
 
 
+Dependencies
+============
+
+None.
+
+
 Testing
 =======
 
-API test to ensure the correct parameter handling in Execution and ActionExecution
+API test to ensure the correct parameter handling in Execution and
+ActionExecution
 
 Check that the custom parameters are loaded in context.custom_context
 
