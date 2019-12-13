@@ -30,7 +30,6 @@ import warnings
 extensions = ['sphinx.ext.autodoc',
               'sphinx.ext.todo',
               'sphinx.ext.viewcode',
-              'oslosphinx',
               'yasfb',
              ]
 
