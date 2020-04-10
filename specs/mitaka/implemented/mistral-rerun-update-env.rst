@@ -56,8 +56,8 @@ The following is the data for the PUT request to the execution controller.
 .. code-block:: json
 
     {
-        'state': 'RUNNING',
-        'params': '{"env": {"k1": "v1"}}'
+        "state": "RUNNING",
+        "params": "{'env': {'k1': 'v1'}}"
     }
 
 For task re-run, the PUT method of the task controller will be affected.
@@ -70,7 +70,7 @@ execution and the task execution appropriately.
 
 The following is the data for the PUT request to the task controller.
 
-.. code-block:: json
+.. code-block:: none
 
     {
         'state': 'RUNNING',

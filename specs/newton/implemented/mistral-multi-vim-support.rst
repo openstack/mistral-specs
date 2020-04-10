@@ -65,7 +65,7 @@ Alternatives
 
 * Start mulitple Mistral instances with different settings.
 * This is an inflexible solution for the problem and the setup of the new
-instances incurs significant administrative overhead.
+  instances incurs significant administrative overhead.
 
 
 Data model impact
@@ -140,22 +140,28 @@ Work Items
   * Inject auth URI in execution context
     * Reason: Actions require the target Auth URI
     * Tasks:
+
       * Set auth_uri in context either from the TARGET_OS_AUTH_URL header or
         from CONF.
 
   * Eliminate admin user for Keystone
+
     * Reason: Admin credentials should not be required to connect to target
       cloud.
     * Tasks:
+
       * Use non-admin Keystone client
       * Use 'tokens' API to retrieve service endpoints
 
   * Use auth URL from context to create service clients
+
     * Reason: service clients need to connect to target cloud
     * Task:
+
       * Do as stated above
 
   * Add new headers to allowed_headers
+
     * Reason: this feature may be used in the future
 
 

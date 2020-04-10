@@ -13,15 +13,6 @@ a specification has been approved but not completed within one or more
 releases since the approval, it may be re-reviewed to make sure it still makes
 sense as written. So, a specification may be seen in different groups:
 
-Mitaka
-------
-
-.. toctree::
-   :glob:
-   :maxdepth: 1
-
-   specs/mitaka/approved/*
-
 Newton
 ------
 
@@ -49,6 +40,15 @@ Pike
 
    specs/pike/approved/*
 
+Rocky
+-----
+
+.. toctree::
+   :glob:
+   :maxdepth: 1
+
+   specs/rocky/approved/*
+   
 Implemented specifications
 ==========================
 

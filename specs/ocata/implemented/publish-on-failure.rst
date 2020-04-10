@@ -26,9 +26,9 @@ Use Cases
 ---------
 
 * As a user, I would like to define a workflow with a generic error
-handler task.
+  handler task.
 * As a user, I would like to simplify error handling in my complex
-workflow system.
+  workflow system.
 
 Proposed change
 ===============

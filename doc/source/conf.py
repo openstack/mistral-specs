@@ -27,10 +27,11 @@ import warnings
 
 # Add any Sphinx extension module names here, as strings. They can be extensions
 # coming with Sphinx (named 'sphinx.ext.*') or your custom ones.
-extensions = ['sphinx.ext.autodoc',
+extensions = [
               'sphinx.ext.todo',
               'sphinx.ext.viewcode',
               'yasfb',
+              'openstackdocstheme'
              ]
 
 # Feed configuration for yasfb
@@ -44,6 +45,12 @@ templates_path = ['_templates']
 
 # The suffix of source filenames.
 source_suffix = '.rst'
+
+html_theme = 'openstackdocs'
+repository_name = 'openstack/mistral-specs'
+bug_project = 'mistral'
+bug_tag = 'specs'
+
 
 # The encoding of source files.
 #source_encoding = 'utf-8-sig'
@@ -70,6 +77,7 @@ copyright = u'%s, OpenStack Mistral Team' % datetime.date.today().year
 exclude_patterns = [
     '_build',
     '**/template.rst',
+    '**/policy-template.rst'
 ]
 
 # The reST default role (used for this markup: `text`) to use for all documents.
@@ -99,7 +107,7 @@ man_pages = []
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
-html_theme = 'nature'
+html_theme = 'openstackdocs'
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
@@ -124,17 +132,6 @@ html_theme = 'nature'
 # docs.  This file should be a Windows icon file (.ico) being 16x16 or 32x32
 # pixels large.
 #html_favicon = None
-
-# If not '', a 'Last updated on:' timestamp is inserted at every page bottom,
-# using the given strftime format.
-git_cmd = ["git", "log", "--pretty=format:'%ad, commit %h'", "--date=local",
-    "-n1"]
-try:
-    html_last_updated_fmt = subprocess.check_output(
-        git_cmd).decode('utf-8')
-except Exception:
-    warnings.warn('Cannot get last updated time from git repository. '
-                  'Not setting "html_last_updated_fmt".')
 
 # If true, SmartyPants will be used to convert quotes and dashes to
 # typographically correct entities.

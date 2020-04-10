@@ -80,9 +80,9 @@ with the following keywords:
 * 'publish-global' - for global publishing, doesn't exist
 * 'publish-global-atomic' - for global atomic publishing, doesn't exist
 * 'publish-global-on-error' - for global publishing in case of error, doesn't
- exist
+  exist
 * 'publish-global-atomic-on-error' - for global atomic publishing in case of
- error, doesn't exist
+  error, doesn't exist
 
 So, we see that a number of keywords is growing and so does the length of the
 keywords. This all leads to a non-concise messy syntax.
