@@ -10,10 +10,6 @@
 # serve to show the default.
 
 import datetime
-import subprocess
-import sys
-import os
-import warnings
 
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
@@ -35,7 +31,7 @@ extensions = [
              ]
 
 # Feed configuration for yasfb
-feed_base_url = 'http://specs.openstack.org/openstack/mistral-specs'
+feed_base_url = 'https://specs.openstack.org/openstack/mistral-specs'
 feed_author = 'OpenStack Mistral Team'
 
 todo_include_todos = True
@@ -47,9 +43,10 @@ templates_path = ['_templates']
 source_suffix = '.rst'
 
 html_theme = 'openstackdocs'
-repository_name = 'openstack/mistral-specs'
-bug_project = 'mistral'
-bug_tag = 'specs'
+openstackdocs_repo_name = 'openstack/mistral-specs'
+openstackdocs_auto_name = False
+openstackdocs_bug_project = 'mistral'
+openstackdocs_bug_tag = 'specs'
 
 
 # The encoding of source files.
@@ -95,7 +92,7 @@ add_module_names = False
 show_authors = False
 
 # The name of the Pygments (syntax highlighting) style to use.
-pygments_style = 'sphinx'
+pygments_style = 'native'
 
 # A list of ignored prefixes for module index sorting.
 modindex_common_prefix = ['mistral-specs.']
