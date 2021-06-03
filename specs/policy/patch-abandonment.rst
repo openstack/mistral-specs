@@ -31,7 +31,7 @@ The following message can be used when abandoning patches.
     Abandoning this patch per the Mistral Patch Abandonment guidelines
     (https://specs.openstack.org/openstack/mistral-specs/specs/policy/patch-abandonment.html).
     If you wish to have this restored and cannot do so yourself, please reach
-    out via #openstack-mistral on freenode or the OpenStack Dev mailing list.
+    out via #openstack-mistral on OFTC or the OpenStack Dev mailing list.
 
 When NOT to Abandon
 ===================
@@ -46,7 +46,7 @@ Restoration
 
 Anyone should feel free to restore their own patches. If a change has been
 abandoned, anyone can request the restoration of the patch by asking a core
-reviewer on IRC in #openstack-mistral on freenode or by sending a request to
+reviewer on IRC in #openstack-mistral on OFTC or by sending a request to
 the openstack-dev mailing list. Should the patch again become stale it may be
 abandoned again.
 
